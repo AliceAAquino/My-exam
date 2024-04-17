@@ -31,7 +31,7 @@ class Employee extends Model
             Log::info("Employee record id ".$item->id. " was updated from {$originalAttributes} to {$item} by user_id ".Auth::id());
         });
         static::deleted(function ($item){
-            Log::info("Employee record id ".$item->id. "was Deleted by " .Auth::id());
+            Log::info("Employee record id ".$item->id. " was Deleted by " .Auth::id());
         });
 
     }

@@ -29,7 +29,7 @@ class Factory extends Model
             Log::info("Factory record id ".$item->id. " was updated from {$originalAttributes} to {$item} by user_id ".Auth::id());
         });
         static::deleted(function ($item){
-            Log::info("Factory record id ".$item->id. "was Deleted by " .Auth::id());
+            Log::info("Factory record id ".$item->id. " was Deleted by " .Auth::id());
         });
 
     }
