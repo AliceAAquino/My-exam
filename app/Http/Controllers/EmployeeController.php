@@ -26,7 +26,7 @@ class EmployeeController extends Controller
             'employees' => DB::table('employees')
                 ->join('factories','employees.factory_id','=','factories.id')
                 ->select('employees.*','factories.factory_name')
-                ->paginate(2)
+                ->paginate(10)
             ]);
         }
             return redirect()->route('login');
